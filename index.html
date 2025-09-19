@@ -26,6 +26,29 @@
     section {
       padding: 20px;
     }
+    /* 🔹 Button styles */
+    .button-group {
+      display: flex;
+      gap: 10px;            /* spacing between buttons */
+      margin-top: 10px;
+    }
+
+    .btn {
+      flex: 1;              /* makes all buttons equal width */
+      text-align: center;   /* centers text inside */
+      padding: 10px 0;      /* consistent button height */
+      background-color: #1E90FF;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #FF8C00;
+      transform: scale(1.03);  /* small "pop" effect */
+    }
   </style>
 </head>
 <body>
@@ -37,9 +60,12 @@
 
     <div class="project">
       <h3>1. Techno-Economic Analysis of appliances and equipment</h3>
-      <p>Analyzed energy systems and equipment, showing about 10% cost savings and reduction in Carbon dioxide emission.
-         <a href="lighting_appliance_A4.pdf" target="_blank">See analysis</a>
+      <p>Analyzed energy systems and equipment, showing about 10% cost savings and reduction in energy consumption and Carbon dioxide emission.
       </p>
+  <div class="button-group">
+    <a href="Energy Efficiency Lighting_Analysis.pdf" target="_blank" class="btn">Lighting Analysis</a>
+    <a href="Energy Efficiency Cooling_Analysis.pdf" target="_blank" class="btn">HVAC Analysis</a>
+  </div>
     </div>
     <h2>Contact</h2>
     <p>Email: anonoloise@gmail.com</p>
